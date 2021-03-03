@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SwiftUISparkleTestApp</title>
+        <item>
+            <title>2.0</title>
+            <pubDate>Mi., 03 März 2021 18:49:36 +0100</pubDate>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://tillhainbach.github.io/SwiftUISparkleTestApp/SwiftUISparkleTestApp.zip" sparkle:version="1" sparkle:shortVersionString="2.0" length="1823441" type="application/octet-stream" sparkle:edSignature="WrErXfPl2ac7NVUsLndfjlr0I/nuWaeyV8N7udLKWqGd8Qe2U9hIDx+DDu+jvkZb+JKNnIvfH5usbW1iHL2KAQ=="/>
+        </item>
+    </channel>
+</rss>
