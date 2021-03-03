@@ -329,6 +329,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUISparkleTestApp/SwiftUISparkleTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISparkleTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H267SUYVMM;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -358,6 +359,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftUISparkleTestApp/SwiftUISparkleTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISparkleTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H267SUYVMM;
 				ENABLE_HARDENED_RUNTIME = YES;

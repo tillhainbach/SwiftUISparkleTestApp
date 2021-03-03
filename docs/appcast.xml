@@ -4,11 +4,9 @@
         <title>SwiftUISparkleTestApp</title>
         <item>
             <title>2.0</title>
-            <pubDate>Mi., 03 März 2021 18:49:36 +0100</pubDate>
+            <pubDate>Mi., 03 März 2021 19:29:05 +0100</pubDate>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/tillhainbach/SwiftUISparkleTestApp/releases/download/2.0/SwiftUISparkleTestApp.zip" sparkle:version="1" sparkle:shortVersionString="2.0" length="1823441" type="application/octet-stream" sparkle:edSignature="WrErXfPl2ac7NVUsLndfjlr0I/nuWaeyV8N7udLKWqGd8Qe2U9hIDx+DDu+jvkZb+JKNnIvfH5usbW1iHL2KAQ=="/>
+            <enclosure url="https://github.com/tillhainbach/SwiftUISparkleTestApp/releases/download/2.0/SwiftUISparkleTestApp.zip" sparkle:version="5" sparkle:shortVersionString="2.0" length="1823511" type="application/octet-stream" sparkle:edSignature="ltoaZPPr1kB3X2ubMsQpu+6cpdET7OVsW7lYfO3tbut7OxPRKAp6dd/jfaPRWAOxHv1zrg/G5EeUBJAkow+QBA=="/>
         </item>
     </channel>
 </rss>
-
-
