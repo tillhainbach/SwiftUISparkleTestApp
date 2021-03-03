@@ -12,6 +12,12 @@ struct ContentView: View {
         NavigationView {
             Text("Hello, world!")
                 .padding()
+            
+            List {
+                ForEach(0..<10, id: \.self) { number in
+                    Text("This is item number \(number)")
+                }
+            }
         }
         .frame(minWidth: 500, minHeight: 400)
     }
