@@ -11,15 +11,15 @@ github pages and github releases for the updating process.
 
 Open Xcode and select a "Create new Xcode-Project".
 
-![Xcode Start Panel](docs/images/xcode-new-project.png)
+<img src="docs/images/xcode-new-project.png" width="500" >
 
 Select "macOS -> App -> Next".
 
-![Xcode select mac app](docs/images/xcode-select-mac-app.png)
+<img src="docs/images/xcode-select-mac-app.png" width="600" >
 
 Enter your product name, team and bundle identifier and click next
 
-![Xcode-project-settings](docs/images/xcode-project-settings.png)
+<img src="docs/images/xcode-project-settings.png" width="600" >
 
 Choose a location where you want to store your project. Select "Create git repo..." and click "next".
 
