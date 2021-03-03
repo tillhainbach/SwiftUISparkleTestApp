@@ -11,7 +11,38 @@
 		2B00158125F000B5005B0224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00158025F000B5005B0224 /* ContentView.swift */; };
 		2B00158325F000B8005B0224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B00158225F000B8005B0224 /* Assets.xcassets */; };
 		2B00158625F000B8005B0224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B00158525F000B8005B0224 /* Preview Assets.xcassets */; };
+		2B15B82125F0020100F8658C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B15B81E25F001F300F8658C /* Sparkle.framework */; };
+		2B15B82225F0020100F8658C /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B15B81E25F001F300F8658C /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B15B82C25F0022400F8658C /* org.sparkle-project.InstallerStatus.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B15B82D25F0022400F8658C /* org.sparkle-project.InstallerConnection.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B15B82E25F0022400F8658C /* org.sparkle-project.InstallerLauncher.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B15B82325F0020100F8658C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B15B82225F0020100F8658C /* Sparkle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B15B82B25F0021D00F8658C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				2B15B82C25F0022400F8658C /* org.sparkle-project.InstallerStatus.xpc in CopyFiles */,
+				2B15B82D25F0022400F8658C /* org.sparkle-project.InstallerConnection.xpc in CopyFiles */,
+				2B15B82E25F0022400F8658C /* org.sparkle-project.InstallerLauncher.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B00157B25F000B5005B0224 /* SwiftUISparkleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISparkleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +52,10 @@
 		2B00158525F000B8005B0224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B00158725F000B8005B0224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B00158825F000B8005B0224 /* SwiftUISparkleTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUISparkleTestApp.entitlements; sourceTree = "<group>"; };
+		2B15B81E25F001F300F8658C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = "org.sparkle-project.InstallerStatus.xpc"; sourceTree = "<group>"; };
+		2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = "org.sparkle-project.InstallerConnection.xpc"; sourceTree = "<group>"; };
+		2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = "org.sparkle-project.InstallerLauncher.xpc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B15B82125F0020100F8658C /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +73,7 @@
 		2B00157225F000B5005B0224 = {
 			isa = PBXGroup;
 			children = (
+				2B15B81D25F001F300F8658C /* Frameworks */,
 				2B00157D25F000B5005B0224 /* SwiftUISparkleTestApp */,
 				2B00157C25F000B5005B0224 /* Products */,
 			);
@@ -71,6 +108,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2B15B81D25F001F300F8658C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B15B81E25F001F300F8658C /* Sparkle.framework */,
+				2B15B82425F0021100F8658C /* Sparkle */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B15B82425F0021100F8658C /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */,
+				2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */,
+				2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +137,8 @@
 				2B00157725F000B5005B0224 /* Sources */,
 				2B00157825F000B5005B0224 /* Frameworks */,
 				2B00157925F000B5005B0224 /* Resources */,
+				2B15B82325F0020100F8658C /* Embed Frameworks */,
+				2B15B82B25F0021D00F8658C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -275,6 +333,10 @@
 				DEVELOPMENT_TEAM = H267SUYVMM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SwiftUISparkleTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +361,10 @@
 				DEVELOPMENT_TEAM = H267SUYVMM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SwiftUISparkleTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
