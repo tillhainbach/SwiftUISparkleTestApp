@@ -4,9 +4,9 @@
         <title>SwiftUISparkleTestApp</title>
         <item>
             <title>0.1.1</title>
-            <pubDate>So., 21 März 2021 21:04:38 +0100</pubDate>
+            <pubDate>So., 21 März 2021 21:13:45 +0100</pubDate>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://api.github.com/repos/tillhainbach/SwiftUISparkleTestApp/releases/assets/33779315" sparkle:version="2" sparkle:shortVersionString="0.1.1" length="4055372" type="application/octet-stream" sparkle:edSignature="JKQVe0QEXmoYyCW+H3PBipAkA3xnvs0JbmrBJj/LqnUFWxNpL6MU/yWgA1qjWwJdQcRpcf+/n3ISlFH/voaTCQ=="/>
+            <enclosure url="https://api.github.com/repos/tillhainbach/SwiftUISparkleTestApp/releases/assets/33779601" sparkle:version="2" sparkle:shortVersionString="0.1.1" length="4055377" type="application/octet-stream" sparkle:edSignature="ZdcNaaqXfqH9bMK2g8jOn6qQVrhFChtZwPfrVKV0fTlMGWVdGu4JdjdupVgKrgCtm9iOHROMyw5s7QE1PemMAQ=="/>
         </item>
     </channel>
 </rss>
