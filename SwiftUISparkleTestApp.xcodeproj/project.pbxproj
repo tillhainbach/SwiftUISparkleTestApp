@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B00157F25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00157E25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift */; };
+		2B00158125F000B5005B0224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00158025F000B5005B0224 /* ContentView.swift */; };
+		2B00158325F000B8005B0224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B00158225F000B8005B0224 /* Assets.xcassets */; };
+		2B00158625F000B8005B0224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B00158525F000B8005B0224 /* Preview Assets.xcassets */; };
+		2B15B82125F0020100F8658C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B15B81E25F001F300F8658C /* Sparkle.framework */; };
+		2B15B82225F0020100F8658C /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B15B81E25F001F300F8658C /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B15B82C25F0022400F8658C /* org.sparkle-project.InstallerStatus.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B15B82D25F0022400F8658C /* org.sparkle-project.InstallerConnection.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B15B82E25F0022400F8658C /* org.sparkle-project.InstallerLauncher.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B6DB75025F7F851008AD7CB /* UpdateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */; };
+		2B7BF10825F4E5FA0023FBEA /* SparkleAutoUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */; };
+		2BF9B2D12600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9B2D02600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF9B2D32600FBD2008DF750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B00157325F000B5005B0224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B00157A25F000B5005B0224;
+			remoteInfo = SwiftUISparkleTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B15B82325F0020100F8658C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B15B82225F0020100F8658C /* Sparkle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B15B82B25F0021D00F8658C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				2B15B82C25F0022400F8658C /* org.sparkle-project.InstallerStatus.xpc in CopyFiles */,
+				2B15B82D25F0022400F8658C /* org.sparkle-project.InstallerConnection.xpc in CopyFiles */,
+				2B15B82E25F0022400F8658C /* org.sparkle-project.InstallerLauncher.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B00157B25F000B5005B0224 /* SwiftUISparkleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISparkleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B00157E25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISparkleTestAppApp.swift; sourceTree = "<group>"; };
+		2B00158025F000B5005B0224 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B00158225F000B8005B0224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B00158525F000B8005B0224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B00158725F000B8005B0224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B00158825F000B8005B0224 /* SwiftUISparkleTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUISparkleTestApp.entitlements; sourceTree = "<group>"; };
+		2B15B81E25F001F300F8658C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = "org.sparkle-project.InstallerStatus.xpc"; sourceTree = "<group>"; };
+		2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = "org.sparkle-project.InstallerConnection.xpc"; sourceTree = "<group>"; };
+		2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = "org.sparkle-project.InstallerLauncher.xpc"; sourceTree = "<group>"; };
+		2B5A263225F9616700A4A528 /* publish-app.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "publish-app.sh"; sourceTree = "<group>"; };
+		2B5A263325F9616700A4A528 /* set_build_number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = set_build_number.sh; sourceTree = "<group>"; };
+		2B5A263425F9616700A4A528 /* set_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = set_version.sh; sourceTree = "<group>"; };
+		2B5A263525F9616700A4A528 /* release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = release.sh; sourceTree = "<group>"; };
+		2B5A263625F9616700A4A528 /* Increment_Build_Number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Increment_Build_Number.sh; sourceTree = "<group>"; };
+		2B5A263725F9616700A4A528 /* add-prelease-label.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "add-prelease-label.sh"; sourceTree = "<group>"; };
+		2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommand.swift; sourceTree = "<group>"; };
+		2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleAutoUpdater.swift; sourceTree = "<group>"; };
+		2BA7374625F91C7F006FB827 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2BBBB18F25F97024002BE09B /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
+		2BF9B2CE2600FBD2008DF750 /* SwiftUISparkleTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUISparkleTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9B2D02600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISparkleTestAppUITests.swift; sourceTree = "<group>"; };
+		2BF9B2D22600FBD2008DF750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B00157825F000B5005B0224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B15B82125F0020100F8658C /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9B2CB2600FBD2008DF750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B00157225F000B5005B0224 = {
+			isa = PBXGroup;
+			children = (
+				2BA7374625F91C7F006FB827 /* Makefile */,
+				2BBBB18F25F97024002BE09B /* exportOptions.plist */,
+				2BFCACF025F91133009BCBDD /* Build-Versioning-Scripts */,
+				2BF9B2CF2600FBD2008DF750 /* SwiftUISparkleTestAppUITests */,
+				2B15B81D25F001F300F8658C /* Frameworks */,
+				2B00157D25F000B5005B0224 /* SwiftUISparkleTestApp */,
+				2B00157C25F000B5005B0224 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B00157C25F000B5005B0224 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B00157B25F000B5005B0224 /* SwiftUISparkleTestApp.app */,
+				2BF9B2CE2600FBD2008DF750 /* SwiftUISparkleTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B00157D25F000B5005B0224 /* SwiftUISparkleTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B00157E25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift */,
+				2B00158025F000B5005B0224 /* ContentView.swift */,
+				2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */,
+				2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */,
+				2B00158225F000B8005B0224 /* Assets.xcassets */,
+				2B00158725F000B8005B0224 /* Info.plist */,
+				2B00158825F000B8005B0224 /* SwiftUISparkleTestApp.entitlements */,
+				2B00158425F000B8005B0224 /* Preview Content */,
+			);
+			path = SwiftUISparkleTestApp;
+			sourceTree = "<group>";
+		};
+		2B00158425F000B8005B0224 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B00158525F000B8005B0224 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B15B81D25F001F300F8658C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B15B81E25F001F300F8658C /* Sparkle.framework */,
+				2B15B82425F0021100F8658C /* Sparkle */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B15B82425F0021100F8658C /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */,
+				2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */,
+				2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		2BF9B2CF2600FBD2008DF750 /* SwiftUISparkleTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9B2D02600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift */,
+				2BF9B2D22600FBD2008DF750 /* Info.plist */,
+			);
+			path = SwiftUISparkleTestAppUITests;
+			sourceTree = "<group>";
+		};
+		2BFCACF025F91133009BCBDD /* Build-Versioning-Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2B5A263725F9616700A4A528 /* add-prelease-label.sh */,
+				2B5A263625F9616700A4A528 /* Increment_Build_Number.sh */,
+				2B5A263225F9616700A4A528 /* publish-app.sh */,
+				2B5A263525F9616700A4A528 /* release.sh */,
+				2B5A263325F9616700A4A528 /* set_build_number.sh */,
+				2B5A263425F9616700A4A528 /* set_version.sh */,
+			);
+			path = "Build-Versioning-Scripts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B00157A25F000B5005B0224 /* SwiftUISparkleTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B00158B25F000B8005B0224 /* Build configuration list for PBXNativeTarget "SwiftUISparkleTestApp" */;
+			buildPhases = (
+				2B00157725F000B5005B0224 /* Sources */,
+				2B00157825F000B5005B0224 /* Frameworks */,
+				2B00157925F000B5005B0224 /* Resources */,
+				2B15B82325F0020100F8658C /* Embed Frameworks */,
+				2B15B82B25F0021D00F8658C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUISparkleTestApp;
+			productName = SwiftUISparkleTestApp;
+			productReference = 2B00157B25F000B5005B0224 /* SwiftUISparkleTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF9B2CD2600FBD2008DF750 /* SwiftUISparkleTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9B2D52600FBD2008DF750 /* Build configuration list for PBXNativeTarget "SwiftUISparkleTestAppUITests" */;
+			buildPhases = (
+				2BF9B2CA2600FBD2008DF750 /* Sources */,
+				2BF9B2CB2600FBD2008DF750 /* Frameworks */,
+				2BF9B2CC2600FBD2008DF750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF9B2D42600FBD2008DF750 /* PBXTargetDependency */,
+			);
+			name = SwiftUISparkleTestAppUITests;
+			productName = SwiftUISparkleTestAppUITests;
+			productReference = 2BF9B2CE2600FBD2008DF750 /* SwiftUISparkleTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B00157325F000B5005B0224 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2B00157A25F000B5005B0224 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2BF9B2CD2600FBD2008DF750 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2B00157A25F000B5005B0224;
+					};
+				};
+			};
+			buildConfigurationList = 2B00157625F000B5005B0224 /* Build configuration list for PBXProject "SwiftUISparkleTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B00157225F000B5005B0224;
+			productRefGroup = 2B00157C25F000B5005B0224 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B00157A25F000B5005B0224 /* SwiftUISparkleTestApp */,
+				2BF9B2CD2600FBD2008DF750 /* SwiftUISparkleTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B00157925F000B5005B0224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B00158625F000B8005B0224 /* Preview Assets.xcassets in Resources */,
+				2B00158325F000B8005B0224 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9B2CC2600FBD2008DF750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B00157725F000B5005B0224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B00158125F000B5005B0224 /* ContentView.swift in Sources */,
+				2B6DB75025F7F851008AD7CB /* UpdateCommand.swift in Sources */,
+				2B7BF10825F4E5FA0023FBEA /* SparkleAutoUpdater.swift in Sources */,
+				2B00157F25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9B2CA2600FBD2008DF750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9B2D12600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF9B2D42600FBD2008DF750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B00157A25F000B5005B0224 /* SwiftUISparkleTestApp */;
+			targetProxy = 2BF9B2D32600FBD2008DF750 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B00158925F000B8005B0224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B00158A25F000B8005B0224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2B00158C25F000B8005B0224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUISparkleTestApp/SwiftUISparkleTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISparkleTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = H267SUYVMM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SwiftUISparkleTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hainbach.SwiftUISparkleTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2B00158D25F000B8005B0224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUISparkleTestApp/SwiftUISparkleTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISparkleTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = H267SUYVMM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SwiftUISparkleTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hainbach.SwiftUISparkleTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2BF9B2D62600FBD2008DF750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H267SUYVMM;
+				INFOPLIST_FILE = SwiftUISparkleTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.hainbach.SwiftUISparkleTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwiftUISparkleTestApp;
+			};
+			name = Debug;
+		};
+		2BF9B2D72600FBD2008DF750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H267SUYVMM;
+				INFOPLIST_FILE = SwiftUISparkleTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.hainbach.SwiftUISparkleTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwiftUISparkleTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B00157625F000B5005B0224 /* Build configuration list for PBXProject "SwiftUISparkleTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B00158925F000B8005B0224 /* Debug */,
+				2B00158A25F000B8005B0224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B00158B25F000B8005B0224 /* Build configuration list for PBXNativeTarget "SwiftUISparkleTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B00158C25F000B8005B0224 /* Debug */,
+				2B00158D25F000B8005B0224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF9B2D52600FBD2008DF750 /* Build configuration list for PBXNativeTarget "SwiftUISparkleTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9B2D62600FBD2008DF750 /* Debug */,
+				2BF9B2D72600FBD2008DF750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B00157325F000B5005B0224 /* Project object */;
+}
