@@ -79,6 +79,7 @@
 		2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleAutoUpdater.swift; sourceTree = "<group>"; };
 		2BA7374625F91C7F006FB827 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		2BBBB18F25F97024002BE09B /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
+		2BEE55322607DE9D00900924 /* get_release_asset_url.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = get_release_asset_url.sh; sourceTree = "<group>"; };
 		2BF9B2CE2600FBD2008DF750 /* SwiftUISparkleTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUISparkleTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9B2D02600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISparkleTestAppUITests.swift; sourceTree = "<group>"; };
 		2BF9B2D22600FBD2008DF750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5A263725F9616700A4A528 /* add-prelease-label.sh */,
+				2BEE55322607DE9D00900924 /* get_release_asset_url.sh */,
 				2B5A263625F9616700A4A528 /* Increment_Build_Number.sh */,
 				2B5A263225F9616700A4A528 /* publish-app.sh */,
 				2B5A263525F9616700A4A528 /* release.sh */,

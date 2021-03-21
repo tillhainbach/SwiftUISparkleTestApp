@@ -131,6 +131,9 @@ delete_release:
 	-git push --delete origin "v$(VERSION)"
 	
 uitest:
+	make clean
+	make set_version VERSION=0.1.0
+	make set_build_number BUILD_NUMBER=1
 	xcodebuild clean \
 		-project $(PROJECT_NAME).xcodeproj \
 		-scheme SwiftUISparkleTestApp \

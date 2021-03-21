@@ -9,8 +9,8 @@
 function header {
     echo "\n$(tput bold)*** $1 ***$(tput sgr0)\n"
 }
-#set -e
-set -x
+set -e
+#set -x
 header "Uploading Release to Github"
 
 PROJECT_NAME=$1
