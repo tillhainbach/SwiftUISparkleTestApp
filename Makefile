@@ -17,7 +17,8 @@
     header \
     uninstall \
     publish \
-    uitest
+    uitest \
+    test-permission-request
 
 PROJECT_NAME=SwiftUISparkleTestApp
 SCRIPT_DIR=Build-Versioning-Scripts
@@ -71,6 +72,8 @@ uninstall:
 	    /Applications/$(PROJECT_NAME).app/Contents/Info.plist))
 	rm -rf /Applications/$(PROJECT_NAME).app
 	rm -rf $(HOME)/Library/Containers/$(CFBundleIdentifier)
+	rm -rf $(HOME)/Library/Containers/$(CFBundleIdentifier).*
+		rm -rf $(HOME)/Library/Containers/$(CFBundleIdentifier)*
 
 clean:
 	rm -rf Archive/*
@@ -140,3 +143,16 @@ uitest:
 		-scheme SwiftUISparkleTestApp \
 		test
 
+test-permission-request:
+	make wipe-all
+	make clean_build
+	make install
+	make run
+	sleep 10
+	osascript -e 'quit app "$(PROJECT_NAME)"'
+	make run
+
+wipe-all:
+	-make clean
+	-make uninstall
+	-rm -rf ~/Library/Containers/org.sparkle-project.*
