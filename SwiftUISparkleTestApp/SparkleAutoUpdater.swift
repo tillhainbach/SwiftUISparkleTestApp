@@ -14,12 +14,11 @@ class SparkleAutoUpdater: NSObject, ObservableObject {
     static let service = "GitHub - https://api.github.com"
     
     var updater: SPUUpdater?
-    let standardUserDriver: SPUStandardUserDriver
+    let standardUserDriver: SPUStandardUserDriver = SPUStandardUserDriver(hostBundle: Bundle.main, delegate: nil)
 
     @Published var canCheckForUpdates: Bool = false
     
     override init() {
-        standardUserDriver = SPUStandardUserDriver(hostBundle: Bundle.main, delegate: nil)
         super.init()
         setUpdater()
     }

@@ -18,7 +18,7 @@
     uninstall \
     publish \
     uitest \
-    test-permission-request
+    test-prompt
 
 PROJECT_NAME=SwiftUISparkleTestApp
 SCRIPT_DIR=Build-Versioning-Scripts
@@ -39,7 +39,7 @@ gh-pages:
 	-git stash pop
 
 run: 
-	open -a $(PROJECT_NAME).app
+	open /Applications/$(PROJECT_NAME).app
 
 build:
 	make header HEADER="Building $(PROJECT_NAME) "
@@ -143,14 +143,14 @@ uitest:
 		-scheme SwiftUISparkleTestApp \
 		test
 
-test-permission-request:
-	make wipe-all
-	make clean_build
-	make install
-	make run
-	sleep 10
-	osascript -e 'quit app "$(PROJECT_NAME)"'
-	make run
+test-prompt:
+	make clean
+	rm -rf ~/Library/Containers/de.hainbach.$(PROJECT_NAME)
+	xcodebuild clean \
+		-project $(PROJECT_NAME).xcodeproj \
+		-scheme $(PROJECT_NAME) \
+		test
+
 
 wipe-all:
 	-make clean

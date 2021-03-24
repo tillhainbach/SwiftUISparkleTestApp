@@ -44,5 +44,22 @@ class SwiftUISparkleTestAppUITests: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
 
     }
+    
+    func testPromptsForPermission() {
+        let app = XCUIApplication()
+        app.launch() 
+        
+        sleep(5)
+        app.terminate()
+
+        let newapp = XCUIApplication()
+        newapp.launch()
+        
+        let prompt = app.staticTexts["Check for updates automatically?"]
+        let exists = NSPredicate(format: "exists == 1")
+
+        expectation(for: exists, evaluatedWith: prompt, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
+    }
 
 }
