@@ -37,7 +37,7 @@ class SparkleAutoUpdater: NSObject, ObservableObject {
             try updater.start()
             self.updater = updater
         } catch {
-            Logger().error("Failed to start SPUUpdater with error: \(error as NSObject)")
+            Logger().error("Failed to start SPUUpdater with error: \(error.localizedDescription)")
             return
         }
     }
