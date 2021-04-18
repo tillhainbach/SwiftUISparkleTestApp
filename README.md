@@ -17,7 +17,7 @@ You can find a detailed step-by-step guide [here](./docs/step-by-step.md).
 
 ## Questions?
 
-You can open an issue and I'll try to help.
+You can open an [issue](https://github.com/tillhainbach/SwiftUISparkleTestApp/issues) and I'll try to help.
 
 ## References
 
