@@ -38,10 +38,11 @@ public final class KeychainServiceModel: NSObject, ObservableObject {
 
   //MARK: - Public Methods
   /// Retrieve Credentials from keychain
-  public func retrieveCredentials() throws -> Credentials {
+  public func retrieveCredentials(for service: String? = nil) throws -> Credentials {
+    let service = service ?? KeychainServiceModel.service
 
     let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
-                                kSecAttrService as String: KeychainServiceModel.service,
+                                kSecAttrService as String: service,
                                 kSecMatchLimit as String: kSecMatchLimitOne,
                                 kSecReturnAttributes as String: true,
                                 kSecReturnData as String: true]
