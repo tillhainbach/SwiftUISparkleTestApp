@@ -76,7 +76,6 @@ public final class KeychainServiceModel: NSObject, ObservableObject {
     let status = SecItemAdd(query as CFDictionary, nil)
     guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status)}
 
-
   }
 
   //MARK: - Private Methods
