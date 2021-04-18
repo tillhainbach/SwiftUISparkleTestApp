@@ -9,7 +9,7 @@ import Sparkle
 import os
 import Combine
 
-
+@available(macOS 10.15, *)
 public final class SparkleAutoUpdater: NSObject, ObservableObject {
   @Published var canCheckForUpdates: Bool = false
 
@@ -30,7 +30,7 @@ public final class SparkleAutoUpdater: NSObject, ObservableObject {
   }
 
   private func setUpdater(userDriver: SPUUserDriver?, delegate: SPUUpdaterDelegate?) {
-    let userDriver = userDriver ?? standardUserDriver
+    let userDriver = userDriver ?? self
     updater = SPUUpdater(hostBundle: Bundle.main, applicationBundle: Bundle.main, userDriver: userDriver, delegate: delegate)
     // Subscribe to didFinishLaunchingNotification and start updater
     // when application finished launching
@@ -43,7 +43,7 @@ public final class SparkleAutoUpdater: NSObject, ObservableObject {
     do {
       try updater?.start()
     } catch {
-      // Post Failure notification. Also an alert to be presented to the user or to be logged
+      // Post Failure notification, present as an alert to the user or log error
       NotificationCenter.default.post(name: Self.didFailStartingUpdater, object: error)
       return
     }
@@ -59,6 +59,11 @@ extension SparkleAutoUpdater {
 //MARK: - Extension HTTPHeaders
 extension SparkleAutoUpdater {
   public func setHTTPHeaders(_ value: String, for key: String) {
+    if updater?.httpHeaders == nil {
+      // init httpHeaders dict
+      updater?.httpHeaders = [key: value]
+      return
+    }
     updater?.httpHeaders?[key] = value
   }
 }
