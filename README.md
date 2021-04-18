@@ -21,7 +21,7 @@ You can open an [issue](https://github.com/tillhainbach/SwiftUISparkleTestApp/is
 
 ## References
 
-[Sparkle] (https://sparkle-project.org)
+[Sparkle](https://sparkle-project.org)
 
 ## Licencse
 
