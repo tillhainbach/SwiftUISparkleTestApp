@@ -11,11 +11,13 @@ import SwiftUI
 struct SwiftUISparkleTestAppApp: App {
     
     @StateObject var updater: SparkleAutoUpdater = SparkleAutoUpdater()
-
+    @StateObject var keychainServiceModel = KeychainServiceModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(updater)
+                .environmentObject(keychainServiceModel)
         }
         .commands {
             UpdateCommand(updater: updater)
