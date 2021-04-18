@@ -17,7 +17,6 @@ public struct UpdateCommand: Commands {
         
         var body: some View {
             Button("Check for updates") {
-                print("Checking for updates")
                 updater.checkForUpdates()
             }
             .disabled(!updater.canCheckForUpdates)
