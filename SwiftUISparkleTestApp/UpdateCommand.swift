@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UpdateCommand: Commands {
+public struct UpdateCommand: Commands {
   
     @ObservedObject var updater: SparkleAutoUpdater
     
@@ -25,7 +25,7 @@ struct UpdateCommand: Commands {
         }
     }
 
-    var body: some Commands {
+    public var body: some Commands {
         CommandGroup(after: .appInfo) {
             BodyView(updater: updater)
         }
