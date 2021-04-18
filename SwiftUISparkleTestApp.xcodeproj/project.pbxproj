@@ -16,8 +16,11 @@
 		2B15B82C25F0022400F8658C /* org.sparkle-project.InstallerStatus.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82525F0021100F8658C /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B15B82D25F0022400F8658C /* org.sparkle-project.InstallerConnection.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82625F0021100F8658C /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B15B82E25F0022400F8658C /* org.sparkle-project.InstallerLauncher.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B65B81C262C92830087FF60 /* InputValidationTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B81B262C92830087FF60 /* InputValidationTextFieldStyle.swift */; };
+		2B65B81F262C92CB0087FF60 /* My+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B81E262C92CB0087FF60 /* My+Extensions.swift */; };
 		2B6DB75025F7F851008AD7CB /* UpdateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */; };
 		2B7BF10825F4E5FA0023FBEA /* SparkleAutoUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */; };
+		2BA946C5260CC43600F5BE18 /* KeychainServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA946C4260CC43600F5BE18 /* KeychainServiceModel.swift */; };
 		2BF9B2D12600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9B2D02600FBD2008DF750 /* SwiftUISparkleTestAppUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,9 +78,12 @@
 		2B5A263525F9616700A4A528 /* release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = release.sh; sourceTree = "<group>"; };
 		2B5A263625F9616700A4A528 /* Increment_Build_Number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Increment_Build_Number.sh; sourceTree = "<group>"; };
 		2B5A263725F9616700A4A528 /* add-prelease-label.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "add-prelease-label.sh"; sourceTree = "<group>"; };
+		2B65B81B262C92830087FF60 /* InputValidationTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidationTextFieldStyle.swift; sourceTree = "<group>"; };
+		2B65B81E262C92CB0087FF60 /* My+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "My+Extensions.swift"; sourceTree = "<group>"; };
 		2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommand.swift; sourceTree = "<group>"; };
 		2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleAutoUpdater.swift; sourceTree = "<group>"; };
 		2BA7374625F91C7F006FB827 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		2BA946C4260CC43600F5BE18 /* KeychainServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceModel.swift; sourceTree = "<group>"; };
 		2BBBB18F25F97024002BE09B /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 		2BEE55322607DE9D00900924 /* get_release_asset_url.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = get_release_asset_url.sh; sourceTree = "<group>"; };
 		2BF9B2CE2600FBD2008DF750 /* SwiftUISparkleTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUISparkleTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +118,7 @@
 				2BFCACF025F91133009BCBDD /* Build-Versioning-Scripts */,
 				2BF9B2CF2600FBD2008DF750 /* SwiftUISparkleTestAppUITests */,
 				2B15B81D25F001F300F8658C /* Frameworks */,
+				2B65B819262C8D8B0087FF60 /* SparkleSwiftUIWrappers */,
 				2B00157D25F000B5005B0224 /* SwiftUISparkleTestApp */,
 				2B00157C25F000B5005B0224 /* Products */,
 			);
@@ -131,8 +138,9 @@
 			children = (
 				2B00157E25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift */,
 				2B00158025F000B5005B0224 /* ContentView.swift */,
-				2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */,
-				2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */,
+				2B65B81B262C92830087FF60 /* InputValidationTextFieldStyle.swift */,
+				2B65B81E262C92CB0087FF60 /* My+Extensions.swift */,
+				2BA946C4260CC43600F5BE18 /* KeychainServiceModel.swift */,
 				2B00158225F000B8005B0224 /* Assets.xcassets */,
 				2B00158725F000B8005B0224 /* Info.plist */,
 				2B00158825F000B8005B0224 /* SwiftUISparkleTestApp.entitlements */,
@@ -166,6 +174,15 @@
 				2B15B82725F0021100F8658C /* org.sparkle-project.InstallerLauncher.xpc */,
 			);
 			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		2B65B819262C8D8B0087FF60 /* SparkleSwiftUIWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				2B7BF10725F4E5FA0023FBEA /* SparkleAutoUpdater.swift */,
+				2B6DB74F25F7F851008AD7CB /* UpdateCommand.swift */,
+			);
+			path = SparkleSwiftUIWrappers;
 			sourceTree = "<group>";
 		};
 		2BF9B2CF2600FBD2008DF750 /* SwiftUISparkleTestAppUITests */ = {
@@ -296,6 +313,9 @@
 				2B6DB75025F7F851008AD7CB /* UpdateCommand.swift in Sources */,
 				2B7BF10825F4E5FA0023FBEA /* SparkleAutoUpdater.swift in Sources */,
 				2B00157F25F000B5005B0224 /* SwiftUISparkleTestAppApp.swift in Sources */,
+				2BA946C5260CC43600F5BE18 /* KeychainServiceModel.swift in Sources */,
+				2B65B81F262C92CB0087FF60 /* My+Extensions.swift in Sources */,
+				2B65B81C262C92830087FF60 /* InputValidationTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

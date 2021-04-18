@@ -46,11 +46,6 @@
                BlueprintName = "SwiftUISparkleTestAppUITests"
                ReferencedContainer = "container:SwiftUISparkleTestApp.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "SwiftUISparkleTestAppUITests/testDidDownloadUpdateSuccess()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
