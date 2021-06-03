@@ -1,3 +1,10 @@
+# NEW SwiftUI-Sparkle-Wrapper => [Sparkly](https://www.github.com/tillhainbach/Sparkly)
+
+This repo was more of a playground. I've since improved my understanding of Sparkle's Architecture and SwiftUI and am currently
+developing [Sparkly](https://www.github.com/tillhainbach/Sparkly) a light, combine-based wrapper for Sparkle. Feel free to check it how.
+
+This repo is archived...
+
 # SwiftUISparkleTestApp
 
 Sample Project for using Sparkle in a SwiftUI-lifecycle app. It includes a
